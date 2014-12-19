@@ -1,0 +1,120 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Andreas} % Your first name
+\familyname{Happe} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Schäffergasse 20/15}{1040 Vienna, Austria}
+\mobile{+43 676 3355006}
+\email{ah@coretec.at}
+\extrainfo{github.com/andreashappe}
+\photo[70pt][0.1pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Employment History}
+
+\cventry{2012--Present}{Senior Security Engineer}{\textsc{CoreTEC GmbH, Vienna}}{}{}{Security-Assessments and Penetration-Tests}
+
+\cventry{2012--Present}{Software Engineering Contractor}{\textsc{Austrian Institute of Technology}}{}{}{Design, Implementation and Maintenance of secure multi-cloud storage systems}
+
+\cventry{2009--Present}{Ruby on Rails Freelancer}{}{}{}{Design, Development and Maintenance of Ruby on Rails-based web applications.}
+
+\cventry{2006--2012}{Software Engineering Contractor}{\textsc{ARC Seibersdorf Research GmbH}\newline\textsc{Austrian Institute of Technology}}{}{}{Design, Development and Maintenance of a Quantum Key-Distribution system.}
+
+\cventry{2007--2009}{CTO}{\textsc{BlackWhale GmbH}}{}{}{Startup working on web-based work-flow solutions.}
+
+\cventry{2001--2007}{System Administrator}{\textsc{Infotech GmbH}}{}{}{Linux and Microsoft Windows systems.}
+
+\section{Technical Skills}
+
+\cvitem{Security Engineering}{Assessment, Design and Implementation of IT-Security-Systems.\newline Design, Execution and Documentation of Pen-Tests.\newline Focus upon manual Application-Level Web Penetration-Tests.\newline Automated testing with \textsc{Capybara}, \textsc{Acunetix}, \textsc{sqlmap.py}, etc.\newline}
+\cvitem{Software Development}{Procedural, Object-Oriented and Functional Programming Paradigms.\newline Expert level in \textsc{Ruby on Rails}, \textsc{C}, \textsc{Java}.\newline Unit Testing with \textsc{RSpec}, \textsc{MiniTest}, \textsc{JUnit}, \textsc{CTest}.\newline Acceptance Testing with \textsc{Capybara} and \textsc{Cucumber}.}
+\newpage
+
+\section{References}
+
+Due to the sensitive nature of my work I prefer to offer references for further information:\newline
+
+\cvitem{Pen-Tests}{Manfred Kirisits, CEO CoreTEC IT Security GmbH\newline imk@coretec.at, +43-676-841-786-310}
+\cvitem{Ruby on Rails}{Peter Greiner, Executive Board Burgstaller-Steiner Immobilien GmbH\newline peter.greiner@burgstaller-steiner.at, +43-650-473-4637}
+\cvitem{Java, Clouds}{Thomas Lorünser, Austrian Institute of Technology\newline thomas.loruenser@ait.ac.at}
+\cvitem{C, Linux}{Thomas Themel, Colleague during SECOQC project, now Google Inc.\newline thomas@themel.com}
+
+\section{Noteworthy Projects}
+
+\cvitem{since 2013}{\textsc{Multiple High-Profile Web-Application Breaches}\newline Discovered security problems in multiple high-profile web applications (Insurance industry, Banking area). Involved in fixing and preventing future data leaks.}
+
+\cvitem{since 2013}{\textsc{``Immosoft''}\newline Lead-Programmer in a Real-Estate Broker software project. An existing c\#/.net application was deemed unmaintainable and its functionality is migrated to an Ruby on Rails web application. Special focus lies on maintainability and automated testing to prevent a similar fate.}
+
+\cvitem{since 2013}{\textsc{Archistar 2.0}\newline Responsible for the maintenance of the Archistar Java code-base while designing and developing a C-based secret-sharing library for low-power systems.}
+
+\cvitem{2012--2013}{\textsc{Archistar}\newline Design and Development of a Multi-Cloud Storage System utilizing BFT (Byzantine Fault Tolerance) and Secret-Sharing techniques.}
+
+\cvitem{2006--2012}{\textsc{SECOQC}\newline Implementation of the first inter-company quantum key distribution network. I was deeply involved in design and implementation of the networking components  (which were written using Linux, Python, C). After the presentation of the prototype during the SECOQC-Conference of 2009 responsible for maintenance and further feature-work.}
+
+\cvitem{2007--2009}{\textsc{Jolein}\newline A time-management and job-scheduling system implemented in Ruby-on-Rails.}
+
+\newpage
+
+\section{Languages}
+
+\cvitemwithcomment{German}{Native language}{}
+\cvitemwithcomment{English}{Full professional proficiency}{}
+
+\section{Formal Education}
+
+\cventry{since 2014}{ongoing PhD studies}{Software Engineering \& Internet Computing}{TU Wien}{}{}
+\cventry{2006--2009}{DI/Master of Science}{Software Engineering \& Internet Computing}{TU Wien}{}{}
+\cventry{2002--2006}{Bakk. techn.}{Software \& Information Engineering}{TU Wien}{}{}
+\cventry{1996--2001}{Matura}{EDV und Organisation}{HTBLVA Villach}{}{}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{Agile Provenance}}
+\cvitem{Supervisors}{S. Dustdar, L. Juszczyk, H.-L. Truong}
+\cvitem{Description}{Automated transparent provenance gathering and analysis within Ruby on Rails.}
+
+
+\section{Publications}
+
+\cvitem{2013}{New release of an open source QKD software: design and implementation of new algorithms, modularization and integration with IPSec\newline \footnotesize{Andreas Happe, Oliver Maurhart, Christoph Pacher, Thomas Loruenser, Cristina Tamas, Andreas Poppe, Momtchil Peev et al.}}
+\cvitem{2012}{Timing synchronization with photon pairs for quantum communications\newline \footnotesize{Andreas Happe, Thomas Loruenser, Andreas Poppe, Momtchil Peev, Florian Hipp, Damian Melniczuk, Pattama Cummon, Pituk Panthong, Paramin Sangwongngam et al.}}
+\cvitem{2012}{Quantum Key Distribution Software maintained by AIT\newline\footnotesize{Andreas Happe, Oliver Maurhart, Christoph Pacher, Thomas Loruenser, Gottfried Lechner, Cristina Tamas, Andreas Poppe, Momtchil Peev et al.}}
+\cvitem{2012}{QKD software architecture and system integration with classical communication infrastructure\newline\footnotesize{Oliver Maurhart, Christoph Pacher, Andreas Happe, Thomas Loruenser, Cristina Tamas, Andreas Poppe, Momtchil Peev}}
+\cvitem{2009}{The SECOQC quantum key distribution network in Vienna\newline\footnotesize{Andreas Happe, Momtchil Peev, Thomas Loruenser, Thomas Themel, Christoph Pacher, Oliver Maurhart, Andreas Poppe, Anton Zeilinger, Cristina Tamas, Edwin Querasser et al.}}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
